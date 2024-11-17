@@ -1,9 +1,17 @@
-# Ignore build files
+# Ignore history and vscode folders
+.history/
+.vscode/
+
+# Ignore build directory
 build/
-*.o
-*.a
-*.so
-*.exe
-*.out
-*.histrory
-*.vscode
+
+# Ignore other common files and directories
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+*.rej
+*.swo
+*.DS_Store
