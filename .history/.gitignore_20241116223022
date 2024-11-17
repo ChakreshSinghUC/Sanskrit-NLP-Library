@@ -1,9 +1,0 @@
-# Ignore build files
-build/
-*.o
-*.a
-*.so
-*.exe
-*.out
-*.histrory
-*.vsco
