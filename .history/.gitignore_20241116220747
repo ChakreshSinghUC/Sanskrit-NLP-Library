@@ -5,5 +5,3 @@ build/
 *.so
 *.exe
 *.out
-*.histrory
-*.vscode
