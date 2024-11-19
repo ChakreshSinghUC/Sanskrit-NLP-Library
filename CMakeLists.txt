@@ -1,5 +1,5 @@
-# FILE: CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
+cmake_policy(SET CMP0074 NEW)
 project(SanskritNLP)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -7,17 +7,18 @@ set(CMAKE_CXX_STANDARD 17)
 # Find ICU package
 find_package(ICU REQUIRED COMPONENTS uc i18n)
 
-# Include ICU directories
-include_directories(${ICU_INCLUDE_DIRS})
+include_directories(${ICU_INCLUDE_DIR})
+link_directories(${ICU_LIBRARY_DIR})
 
-# Add libraries
-add_library(unicode_support src/unicode_support.cpp)
-add_library(transliteration src/transliteration.cpp)
+# Add include directory for project headers
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
-# Link ICU libraries
-target_link_libraries(unicode_support ${ICU_LIBRARIES})
-target_link_libraries(transliteration ${ICU_LIBRARIES})
+# Add source files for Transliteration and UnicodeSupport
+set(SOURCE_FILES
+    src/main.cpp
+    src/transliteration.cpp
+    src/unicode_support.cpp
+)
 
-# Add executable
-add_executable(main src/main.cpp)
-target_link_libraries(main unicode_support transliteration ${ICU_LIBRARIES})
+add_executable(SanskritNLP ${SOURCE_FILES})
+target_link_libraries(SanskritNLP ${ICU_LIBRARIES})
