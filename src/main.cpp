@@ -4,7 +4,7 @@
 
 int main()
 {
-    std::string input = "example";
+    std::string input = "अआइईउऊ"; // Example Devanagari input
 
     // Transliteration example
     std::string iast = Transliteration::toIAST(input);
