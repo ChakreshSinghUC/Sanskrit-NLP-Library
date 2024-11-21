@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User-specific files
 *.rsuser
 *.suo
@@ -58,3 +59,22 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+=======
+# Ignore history and vscode folders
+.history/
+.vscode/
+
+# Ignore build directory
+build/
+
+# Ignore other common files and directories
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+*.rej
+*.swo
+*.DS_Store
+>>>>>>> ffc10b697b375d15e96b9f2d0404f72fa9f72f72
