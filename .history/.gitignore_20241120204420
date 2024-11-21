@@ -59,4 +59,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.history/
+hist
