@@ -35,8 +35,8 @@ namespace SanskritNlpLib
             AddToDictionary(DevanagariToRoman, 'ग', "g");
             AddToDictionary(DevanagariToRoman, 'घ', "gh");
             AddToDictionary(DevanagariToRoman, 'ङ', "ṅ");
-            AddToDictionary(DevanagariToRoman, 'च', "c");
-            AddToDictionary(DevanagariToRoman, 'छ', "ch");
+            AddToDictionary(DevanagariToRoman, 'च', "ch");
+            AddToDictionary(DevanagariToRoman, 'छ', "chh");
             AddToDictionary(DevanagariToRoman, 'ज', "j");
             AddToDictionary(DevanagariToRoman, 'झ', "jh");
             AddToDictionary(DevanagariToRoman, 'ञ', "ñ");
@@ -95,8 +95,8 @@ namespace SanskritNlpLib
             AddToDictionary(RomanToDevanagari, "g", 'ग');
             AddToDictionary(RomanToDevanagari, "gh", 'घ');
             AddToDictionary(RomanToDevanagari, "ṅ", 'ङ');
-            AddToDictionary(RomanToDevanagari, "c", 'च');
-            AddToDictionary(RomanToDevanagari, "ch", 'छ');
+            AddToDictionary(RomanToDevanagari, "ch", 'च');
+            AddToDictionary(RomanToDevanagari, "chh", 'छ');
             AddToDictionary(RomanToDevanagari, "j", 'ज');
             AddToDictionary(RomanToDevanagari, "jh", 'झ');
             AddToDictionary(RomanToDevanagari, "ñ", 'ञ');
